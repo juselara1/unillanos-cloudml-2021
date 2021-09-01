@@ -97,10 +97,14 @@ print(x)
 # En este caso, el problema consiste en encontrar el vector de parámetros $\mathbf{w} \in \mathbb{R}^{m \times 1}$ a partir de observaciones compuestas por $\mathbf{X} \in \mathbb{R}^{N \times m}$ variables dependientes y $\mathbf{y} \in \mathbb{R}^{N \times 1}$ variables dependientes.
 #
 # Comencemos cargando unos datos:
+#
 # **Puede descargarlos corriendo el siguiente comando**
-# ```python
-# !wget https://raw.githubusercontent.com/juselara1/unillanos-cloudml-2021/main/numpy/data/reg.npy
+#
+# ```sh
+# !mkdir data
+# !wget https://raw.githubusercontent.com/juselara1/unillanos-cloudml-2021/master/numpy/data/reg.npy -P data/
 # ```
+
 #%%
 data = np.load("data/reg.npy", allow_pickle=True)
 X = data.item()["x"]

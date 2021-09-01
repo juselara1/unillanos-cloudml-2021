@@ -38,6 +38,12 @@ import matplotlib.pyplot as plt
 #%%
 #%% [markdown]
 # Veamos como enviar una imagen como un `post` al api ejecutando en local con `flask`.
+#
+# *Puede descargar la imagen con el siguiente comando:*
+#
+# ```python
+# !wget https://raw.githubusercontent.com/juselara1/unillanos-cloudml-2021/master/rest/data/image.jpg
+# ```
 
 #%%
 im_original = cv2.imread("data/image.jpg")

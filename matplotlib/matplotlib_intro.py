@@ -133,7 +133,8 @@ ax.pie(freqs, labels=labels)
 # Nos permite visualizar imágenes y mapas de calor.
 # **Puede descargar los datos, corriendo el siguiente comando**
 # ```python
-# !wget https://raw.githubusercontent.com/juselara1/unillanos-cloudml-2021/main/matplotlib/data/im.npy
+# !mkdir data
+# !wget https://raw.githubusercontent.com/juselara1/unillanos-cloudml-2021/master/matplotlib/data/im.npy -P data/
 # ```
 
 #%%

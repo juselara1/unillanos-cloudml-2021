@@ -32,7 +32,8 @@ api_key = ""
 # **Puede descargar la imagen usando el siguiente comando**
 #
 # ```python
-# !wget 
+# !mkdir data
+# !wget https://raw.githubusercontent.com/juselara1/unillanos-cloudml-2021/master/cloud_apis/data/bw_image.jpg -P data/
 # ```
 
 #%%
@@ -81,7 +82,7 @@ ax[1].set_title("Resultado")
 # **Puede descargar la imagen usando el siguiente comando:**
 #
 # ```sh
-# !wet 
+# !wget https://raw.githubusercontent.com/juselara1/unillanos-cloudml-2021/master/cloud_apis/data/people.png -P data/
 # ```
 
 #%%
@@ -120,6 +121,13 @@ ax.axis("off")
 
 #%% [markdown]
 # Cargamos los textos
+#
+# **Puede descargar los datos con el siguiente comando:
+#
+# ```sh
+# !wget https://raw.githubusercontent.com/juselara1/unillanos-cloudml-2021/master/cloud_apis/data/angry.txt -P data/
+# !wget https://raw.githubusercontent.com/juselara1/unillanos-cloudml-2021/master/cloud_apis/data/happy.txt -P data/
+# ```
 
 #%%
 with open("data/angry.txt") as f:
@@ -158,6 +166,12 @@ print(r.json())
 # Este servicio nos permite acortar textos.
 #
 # Primero, cargamos el texto:
+#
+# **Puede descargar los datos con el siguiente comando:**
+# 
+# ```python
+# !wget https://raw.githubusercontent.com/juselara1/unillanos-cloudml-2021/master/cloud_apis/data/long_text.txt -P data/
+# ```
 
 #%%
 with open("data/long_text.txt") as f:
@@ -179,6 +193,12 @@ print(r.json())
 #%% [markdown]
 # ## Toonify
 # Con este servicio podemos caricaturizar imágenes.
+#
+# **Puede descargar la imagen con el siguiente comando:
+#
+# ```python
+# !wget https://raw.githubusercontent.com/juselara1/unillanos-cloudml-2021/master/cloud_apis/data/kubrick.jpg -P data/
+# ```
 
 #%%
 im = cv2.imread("data/kubrick.jpg")
